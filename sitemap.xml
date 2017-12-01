@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/2017/11/30/hexo/</loc>
     
-    <lastmod>2017-12-01T03:49:23.984Z</lastmod>
+    <lastmod>2017-12-01T06:27:20.637Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2017/11/30/hexo/</loc>
+    <loc>http://yoursite.com/404.html</loc>
     
-    <lastmod>2017-12-01T03:48:58.625Z</lastmod>
+    <lastmod>2017-12-01T05:41:45.207Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2017-12-01T05:32:01.368Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2017-12-01T03:48:46.874Z</lastmod>
+    <lastmod>2017-12-01T05:31:46.773Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
-    <lastmod>2017-11-30T09:01:16.388Z</lastmod>
+    <lastmod>2017-12-01T05:31:29.233Z</lastmod>
     
   </url>
   
