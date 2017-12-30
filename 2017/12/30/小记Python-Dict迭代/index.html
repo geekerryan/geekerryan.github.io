@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="『九栋老王』的博客">
 <meta property="og:description" content="1234list1 = [&apos;Adam&apos;, &apos;Lisa&apos;, &apos;Bart&apos;, &apos;Paul&apos;]tuple1 = (&apos;Adam&apos;, &apos;Lisa&apos;, &apos;Bart&apos;, &apos;Paul&apos;)d = &amp;#123;&apos;Adam&apos;: 95, &apos;Lisa&apos;: 85, &apos;Bart&apos;: 59, &apos;Paul&apos;: 74&amp;#125;d1 = &amp;#123;0: &apos;Adam&apos;, 1: &apos;Lisa&apos;, 2: &apos;Bart&apos;, 3: &apos;Paul&apos;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-30T09:48:41.361Z">
+<meta property="og:updated_time" content="2017-12-30T09:53:19.377Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小记Python迭代">
 <meta name="twitter:description" content="1234list1 = [&apos;Adam&apos;, &apos;Lisa&apos;, &apos;Bart&apos;, &apos;Paul&apos;]tuple1 = (&apos;Adam&apos;, &apos;Lisa&apos;, &apos;Bart&apos;, &apos;Paul&apos;)d = &amp;#123;&apos;Adam&apos;: 95, &apos;Lisa&apos;: 85, &apos;Bart&apos;: 59, &apos;Paul&apos;: 74&amp;#125;d1 = &amp;#123;0: &apos;Adam&apos;, 1: &apos;Lisa&apos;, 2: &apos;Bart&apos;, 3: &apos;Paul&apos;">
@@ -365,7 +365,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  290
+                  305
                 </span>
               
 
@@ -381,7 +381,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -403,16 +403,10 @@
 
       
         <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">list1</span> = [<span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>, <span class="string">'Paul'</span>]</span><br><span class="line"><span class="attr">tuple1</span> = (<span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>, <span class="string">'Paul'</span>)</span><br><span class="line"><span class="attr">d</span> = &#123;<span class="string">'Adam'</span>: <span class="number">95</span>, <span class="string">'Lisa'</span>: <span class="number">85</span>, <span class="string">'Bart'</span>: <span class="number">59</span>, <span class="string">'Paul'</span>: <span class="number">74</span>&#125;</span><br><span class="line"><span class="attr">d1</span> = &#123;<span class="number">0</span>: <span class="string">'Adam'</span>, <span class="number">1</span>: <span class="string">'Lisa'</span>, <span class="number">2</span>: <span class="string">'Bart'</span>, <span class="number">3</span>: <span class="string">'Paul'</span>&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>迭代List和Tuple<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="built_in">print</span>(i) <span class="comment"># 1,2,3,4</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tuple1:</span><br><span class="line">    <span class="built_in">print</span>(i) <span class="comment"># 1,2,3,4</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>可见，遍历的结果都是元素本身，而非索引;如果要加上索引，用enumerate<br><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for <span class="built_in">index</span>, <span class="keyword">value</span> <span class="keyword">in</span> enumerate(list1):</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">index</span>, <span class="string">'--'</span>, <span class="keyword">value</span>)</span><br><span class="line">for <span class="built_in">index</span>, <span class="keyword">value</span> <span class="keyword">in</span> enumerate(tuple1):</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">index</span>, <span class="string">'--'</span>, <span class="keyword">value</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="迭代List和Tuple"><a href="#迭代List和Tuple" class="headerlink" title="迭代List和Tuple"></a>迭代List和Tuple</h3><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    print(i) <span class="meta"># <span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>, <span class="string">'Paul'</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tuple1:</span><br><span class="line">    print(i) <span class="meta"># <span class="string">'Adam'</span>, <span class="string">'Lisa'</span>, <span class="string">'Bart'</span>, <span class="string">'Paul'</span></span></span><br></pre></td></tr></table></figure>
+<p>可见，遍历的结果都是元素本身，而非索引;如果要加上索引，用enumerate<br><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for <span class="built_in">index</span>, <span class="keyword">value</span> <span class="keyword">in</span> enumerate(list1):</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">index</span>, <span class="string">'--'</span>, <span class="keyword">value</span>) # <span class="number">0</span>--Addam <span class="number">1</span>--Lisa <span class="number">2</span>--Bart <span class="number">3</span>--Paul</span><br><span class="line">for <span class="built_in">index</span>, <span class="keyword">value</span> <span class="keyword">in</span> enumerate(tuple1):</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">index</span>, <span class="string">'--'</span>, <span class="keyword">value</span>) # <span class="number">0</span>--Addam <span class="number">1</span>--Lisa <span class="number">2</span>--Bart <span class="number">3</span>--Paul</span><br></pre></td></tr></table></figure></p>
 <p>使用 enumerate() 函数，可以在for循环中同时绑定索引index和元素name。<br>实际上enumerate()把[‘Adam’, ‘Lisa’, ‘Bart’, ‘Paul’]变成了[(0, ‘Adam’), (1, ‘Lisa’), (2, ‘Bart’), (3, ‘Paul’)]</p>
-<ol>
-<li>迭代Dict</li>
-</ol>
-<p>dict.values()返回Dict的Value，只迭代Value的话用这个<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> v <span class="keyword">in</span> d1.values():</span><br><span class="line">    <span class="built_in">print</span>(v) <span class="comment"># Adam Lisa Bart Paul</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="迭代Dict"><a href="#迭代Dict" class="headerlink" title="迭代Dict"></a>迭代Dict</h3><p>dict.values()返回Dict的Value，只迭代Value的话用这个<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> v <span class="keyword">in</span> d1.values():</span><br><span class="line">    <span class="built_in">print</span>(v) <span class="comment"># Adam Lisa Bart Paul</span></span><br></pre></td></tr></table></figure></p>
 <p>dict.items()返回一个列表，列表的每一个元素是讲key和value合在一起的tuple<br>[(‘Lisa’, 85), (‘Adam’, 95), (‘Bart’, 59)]。可以同时打印key和value<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> key, <span class="built_in">value</span> <span class="keyword">in</span> d.<span class="keyword">items</span>():</span><br><span class="line">    print(key, <span class="string">'--'</span>, <span class="built_in">value</span>) <span class="comment"># Adam -- 95 Lisa -- 85 Bart -- 59 Paul -- 74</span></span><br></pre></td></tr></table></figure></p>
 <p>P.S:也可以用enumerate迭代dict，但是会覆盖掉原来的key，而改成从0开始的顺序索引<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> key, <span class="built_in">value</span> <span class="keyword">in</span> enumerate(d):</span><br><span class="line">    print(key, <span class="string">'--'</span>, <span class="built_in">value</span>) <span class="comment"># 0 -- Adam 1 -- Lisa 2 -- Bart 3 -- Paul</span></span><br></pre></td></tr></table></figure></p>
 
@@ -516,8 +510,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -617,6 +620,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代List和Tuple"><span class="nav-number">1.</span> <span class="nav-text">迭代List和Tuple</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代Dict"><span class="nav-number">2.</span> <span class="nav-text">迭代Dict</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
